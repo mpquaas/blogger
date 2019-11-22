@@ -15,7 +15,7 @@ class HeyStack_ATS(unittest.TestCase):
        pwd = "maverick1a"
        driver = self.driver
        driver.maximize_window()
-       driver.get("http://lduman.pythonanywhere.com//admin")
+       driver.get("http://127.0.0.1:8000/admin")
        elem = driver.find_element_by_id("id_username")
        elem.send_keys(user)
        time.sleep(2)
@@ -23,7 +23,7 @@ class HeyStack_ATS(unittest.TestCase):
        elem.send_keys(pwd)
        time.sleep(2)
        elem.send_keys(Keys.RETURN)
-       driver.get("http://lduman.pythonanywhere.com/")
+       driver.get("http://127.0.0.1:8000/")
        assert "Logged In"
        time.sleep(5)
 
