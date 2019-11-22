@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 #This will test the login functionality
-class HeyStack_ATS(unittest.TestCase):
+class Login_ATS(unittest.TestCase):
 
    def setUp(self):
        self.driver = webdriver.Chrome()
